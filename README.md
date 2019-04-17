@@ -15,9 +15,9 @@ The container is made to be quick and easy to start, use and run.
 
 ## Redis instances inside the container
 
-The cluster is 6 redis instances running with 3 master & 3 slaves, one slave for each master. They run on ports 7000 to 7005.
+The cluster is 6 redis instances running with 3 master & 3 slaves, one slave for each master. They run on ports 17000 to 17005.
 
-If the flag `-e "STANDALONE=true"` is passed there is 2 standalone instances runnin on port 7006 and 7007.
+If the flag `-e "STANDALONE=true"` is passed there is 2 standalone instances runnin on port 17006 and 17007.
 
 If the flag `-e "SENTINEL=true"` is passed there are 3 Sentinel nodes running on ports 5000 to 5002 matching cluster's master instances.
 
@@ -62,7 +62,7 @@ To stop the container run:
 
 To connect to your cluster you can use the redis-cli tool:
 
-    redis-cli -c -p 7000
+    redis-cli -c -p 17000
 
 Or the built redis-cli tool inside the container that will connect to the cluster inside the container
 
